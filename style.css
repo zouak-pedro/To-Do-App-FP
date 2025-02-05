@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #77e4c8;
+}
+h1 {
+  text-align: center;
+}
+h3,
+p {
+  margin: 4px;
+}
+.head {
+  display: flex;
+  flex-direction: column;
+  width: 93vw;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+input {
+  padding: 5px;
+}
+input[type="button"] {
+  background-color: #478ccf;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+input[type="button"]:hover {
+  cursor: pointer;
+  background-color: #4535c1;
+}
+.tasklist_item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #36c2ce;
+  margin: 3px 0;
+  padding: 0 6px 0 30px;
+  border-radius: 5px;
+  position: relative;
+}
+.tasklist_item_button {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+}
+
+button {
+  background-color: #478ccf;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 700;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #4535c1;
+}
+.tasklist_item_check {
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border: solid black 1px;
+  border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  top: 0.5rem;
+}
+.tasklist_item_check::after {
+  content: "✔";
+  color: #fff;
+  position: absolute;
+  left: 5px;
+}
+.tasklist_item_check:hover {
+  cursor: pointer;
+}
+.error {
+  background-color: #4535c1;
+  position: fixed;
+  color: #fff;
+  font-weight: 700;
+  padding: 2px 5px;
+  border-radius: 5px;
+  top: 2rem;
+  right: 2rem;
+}
